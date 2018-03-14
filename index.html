@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coding Bootacamp JavaScript</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
+
 <body>
-    <h1>Can you guess what word I'm thinking of?</h1>
+    <div class="container">
+        <h2 class="text-center">Can you guess what word I'm thinking of?</h2>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Guess your word</h3>
+                <label for="guess">What is your guess?</label>
+                <input type="text" class="form-control" name="guess" id="guess" />
+                <button class="btn btn-success" id="submit-guess" onclick="handleUserGuess()">Submit</button>
+            </div>
+            <div class="col-sm-6">
+                <h3>Words to guess:</h3>
+                <ul id="computer-guess-words">
+                    <li>soda</li>
+                    <li>carrots</li>
+                    <li>guitar</li>
+                    <li>headphones</li>
+                    <li>chips</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
     <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
