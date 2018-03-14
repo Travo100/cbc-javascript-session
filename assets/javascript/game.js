@@ -19,9 +19,8 @@ function handleUserGuess() {
 }
 
 // setting the array up as a list in html
-var ul = document.getElementById("computer-guess-words");
-
 for(var i = 0; i < wordsArray.length; i++) {
+    var ul = document.getElementById("computer-guess-words");
     var li = document.createElement('li');
     li.appendChild(document.createTextNode(wordsArray[i]));
     ul.appendChild(li);
